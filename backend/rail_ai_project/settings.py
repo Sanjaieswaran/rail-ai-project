@@ -31,7 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'traffic_control.apps.TrafficControlConfig', # Use this more specific path
+    # My Apps
+    'traffic_control.apps.TrafficControlConfig',
+
+    # 3rd Party Apps
+    'rest_framework',
+
+    # Default Django Apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
